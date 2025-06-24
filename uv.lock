@@ -817,6 +817,13 @@ dependencies = [
     { name = "webdriver-manager" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "pytest-mock" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "httpx", specifier = "~=0.27.2" },
@@ -847,6 +854,13 @@ requires-dist = [
     { name = "selenium", specifier = "==4.9.1" },
     { name = "undetected-chromedriver", specifier = "==3.5.5" },
     { name = "webdriver-manager", specifier = "==4.0.2" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pytest", specifier = ">=8.4.1" },
+    { name = "pytest-cov", specifier = ">=6.2.1" },
+    { name = "pytest-mock", specifier = ">=3.14.1" },
 ]
 
 [[package]]
